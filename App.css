@@ -1,0 +1,45 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h3 {
+  margin: 20;
+}
+
+
+.app-title {
+  color: #05daff;
+  text-align: center;
+  font-size: 75px;
+  font-family: 'Digital-7', sans-serif;
+}
+
+.app-description {
+  color: #04e2ff; 
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Digital-7', sans-serif;
+}
+
+.answer-input {
+  padding: 12px; /* Increase padding for more space inside the input box */
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Set a fixed width for the input box */
+  height: 12px; /* Set the height of the input box */
+  font-size: 24px; /* Adjust font size for better readability */
+}
+
+
+.nav-buttonprev{
+  margin-right: 10px;
+  background-color: #04deff;
+
+}
+
+.nav-buttonnext{
+  margin-left: 10px;
+  background-color: #04deff;
+}

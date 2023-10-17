@@ -1,0 +1,91 @@
+/* Flashcard.css */
+
+.h3 {
+  margin: 20px;
+}
+
+.flashcard-inner {
+  font-size: 24px;
+}
+
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.flashcard {
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 750px;
+}
+
+.flashcard-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  width: 100%; /* Ensure both front and back have the same width */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  padding: 40px;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.flashcard-front {
+  background-color: #191770;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.flashcard-back {
+  background-color: #C20521;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.correct-text {
+  color: #04Deff;
+  font-size: 30px;
+}
+
+.incorrect-text {
+  color: #04Deff;
+  font-size: 30px;
+}
+
+
+.answer-container{
+  margin-top: 20px;
+}
+
+.button-container{
+  margin-top: 20px;
+}
+
+div.flashcard-container {
+  margin-top: -200px; /* Add margin if necessary */
+}
